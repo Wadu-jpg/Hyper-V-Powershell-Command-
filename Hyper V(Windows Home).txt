@@ -1,0 +1,7 @@
+pushd "%~dp0"
+for /f %i in ('dir /b %SystemRoot%\servicing\Packages*Hyper-V*.mum') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%i"
+Dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL
+if command, Ljdj then command ends
+Run
+Run
+
